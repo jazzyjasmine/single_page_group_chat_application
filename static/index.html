@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Watch Party</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="/static/script.js"></script>
+</head>
+<body>
+
+<div class="chat_header">
+    <h2><a href="/">Watch Party</a></h2>
+    <invite>
+        <p>Invite users to this chat at:</p>
+        <p id="invite_link"></p>
+    </invite>
+</div>
+
+<div class="container">
+
+    <hero>
+        <h1>Watch Party</h1>
+        <logo>
+            <img id="tv" src="/static/tv.jpeg">
+            <img id="popcorn" src="/static/popcorn.png">
+        </logo>
+        <div class="create_chat">
+            <button value="create" id="create_chat">Create a Chat!</button>
+            <p id="existed_chat_rooms"></p>
+        </div>
+    </hero>
+
+    <div class="auth">
+        <h2>Welcome to Watch Party!</h2>
+        <p>Log in or create new account</p>
+        <label for="username">Username</label><br><input id="username">
+        <br>
+        <label for="password">Password</label><br><input id="password">
+        <br>
+        <button id="submit_auth">Submit</button>
+    </div>
+
+
+    <div class="clip">
+        <div class="chat">
+            <div class="chat_interface">
+                <div class="comment_box">
+                    <div>
+                        <label for="comment">What do you have to say?</label>
+                        <textarea id="post_content" name="comment"></textarea>
+                        <button id="post" type="submit" value="Post">Post</button>
+                    </div>
+                </div>
+                <div class="messages">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
